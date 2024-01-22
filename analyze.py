@@ -21,5 +21,19 @@ def compute_readibility(text):
     print(total_text,'words')
     print(total_sentences,'sentences')
 
+def count_syllables(words):
+    count = 0
+
+    for word in words:
+        word_count = count_syllables_in_word(word)
+        count = word_count + 1
+
+        return count
+
+def count_syllables_in_word(word):
+    count = 0
+
+    return count        
+
 
 compute_readibility(ch1text.text)
