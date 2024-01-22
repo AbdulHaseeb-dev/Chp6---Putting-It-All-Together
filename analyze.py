@@ -2,10 +2,11 @@ import ch1text
 
 def count_sentences(text):
     count = 0
-
+    terminals = '.;?!'
     for char in text:
-        if char == '.' or char == ';' or char == '?' or char == '!':
-            count = count + 1
+            if char in terminals:
+        # if char == '.' or char == ';' or char == '?' or char == '!':
+             count = count + 1
     return count
 
 def compute_readibility(text):
